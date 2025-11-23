@@ -8,7 +8,6 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "tsgo -p tsconfig.check.json; biome lint --only=correctness/noUndeclaredDependencies; ast-grep scan; npx tailwindcss -i ./src/index.css -o /dev/null 2>&1 | grep -E '^(CssSyntaxError|Error):.*' || true",
-
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
