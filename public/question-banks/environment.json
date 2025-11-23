@@ -1,0 +1,47 @@
+{
+  "id": "environment",
+  "name": "Environment & Nature",
+  "description": "Questions about environmental issues, nature, and sustainability",
+  "author": "IELTS Practice Team",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "env-q1",
+      "type": "part1",
+      "text": "Do you think people in your country are concerned about environmental issues?",
+      "media": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "speakingDuration": 20
+    },
+    {
+      "id": "env-q2",
+      "type": "part2",
+      "text": "Describe an environmental problem in your area.",
+      "media": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "speakingDuration": 120,
+      "card": {
+        "title": "Describe an environmental problem in your area.",
+        "subtitle": "You should say:",
+        "bullets": [
+          "what the problem is",
+          "what causes it",
+          "how it affects people",
+          "explain what could be done to solve it"
+        ]
+      }
+    },
+    {
+      "id": "env-q3",
+      "type": "part3",
+      "text": "What can individuals do to help protect the environment?",
+      "media": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "speakingDuration": 60
+    },
+    {
+      "id": "env-q4",
+      "type": "part3",
+      "text": "Should governments or individuals be more responsible for environmental protection?",
+      "media": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "speakingDuration": 60
+    }
+  ]
+}

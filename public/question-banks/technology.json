@@ -1,0 +1,47 @@
+{
+  "id": "technology",
+  "name": "Technology & Innovation",
+  "description": "Questions about technology, gadgets, and digital life",
+  "author": "IELTS Practice Team",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "tech-q1",
+      "type": "part1",
+      "text": "How often do you use technology in your daily life?",
+      "media": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "speakingDuration": 20
+    },
+    {
+      "id": "tech-q2",
+      "type": "part2",
+      "text": "Describe a piece of technology you find useful.",
+      "media": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "speakingDuration": 120,
+      "card": {
+        "title": "Describe a piece of technology you find useful.",
+        "subtitle": "You should say:",
+        "bullets": [
+          "what it is",
+          "when you got it",
+          "how you use it",
+          "explain why you find it useful"
+        ]
+      }
+    },
+    {
+      "id": "tech-q3",
+      "type": "part3",
+      "text": "Do you think technology has improved our quality of life?",
+      "media": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "speakingDuration": 60
+    },
+    {
+      "id": "tech-q4",
+      "type": "part3",
+      "text": "What are the disadvantages of relying too much on technology?",
+      "media": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "speakingDuration": 60
+    }
+  ]
+}
