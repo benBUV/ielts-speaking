@@ -6,17 +6,10 @@
   "version": "1.0",
   "questions": [
     {
-      "id": "edu-q1",
-      "type": "part1",
-      "text": "What subject did you enjoy most at school?",
-      "media": "/videos/w1/1.mp4",
-      "speakingDuration": 20
-    },
-    {
       "id": "edu-q2",
       "type": "part2",
       "text": "Describe a teacher who has influenced you.",
-      "media": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "media": "/ielts-speaking/videos/w2/1.mp4",
       "speakingDuration": 120,
       "card": {
         "title": "Describe a teacher who has influenced you.",
