@@ -6,7 +6,7 @@ import routes from './routes';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/ielts-speaking/">
       <div className="flex flex-col min-h-screen">
         <main className="flex-grow">
           <Routes>
