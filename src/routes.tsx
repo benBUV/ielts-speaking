@@ -11,7 +11,7 @@ interface RouteConfig {
 const routes: RouteConfig[] = [
   {
     name: 'IELTS Speaking Practice',
-    path: '/',
+    path: '/ielts-speaking',
     element: <PracticePage />
   }
 ];

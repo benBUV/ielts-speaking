@@ -11,7 +11,7 @@ export const educationQuestionBank: QuestionBank = {
       id: 'edu1',
       type: QuestionType.Part1,
       text: 'What subject did you enjoy most at school?',
-      media: 'https://www.youtube.com/watch?v=NpEaa2P7qZI', // YouTube video example
+      media: '/ielts-speaking/videos/w2/1.mp4', // YouTube video example
       speakingDuration: 20,
     },
     {

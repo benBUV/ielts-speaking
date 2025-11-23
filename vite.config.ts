@@ -5,7 +5,7 @@ import path from 'path';
 import { miaodaDevPlugin } from "miaoda-sc-plugin";
 
 export default defineConfig({
-  base: '/',
+  base: '/ielts-speaking/',
   plugins: [
     react(),
     svgr({

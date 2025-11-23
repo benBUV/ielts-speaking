@@ -1,6 +1,8 @@
 import { Question, QuestionBank } from '@/types';
 import { defaultQuestionBank } from '@/data/question-banks/default';
 
+const base = import.meta.env.BASE_URL; // e.g. "/" or "/ielts-speaking/"
+
 /**
  * Dynamic question bank loader
  * Loads question banks from /public/question-banks/ directory
@@ -20,9 +22,10 @@ export const getQueryParams = (): URLSearchParams => {
  * @returns Promise with the loaded question bank
  */
 const loadQuestionBankFromFile = async (bankId: string): Promise<QuestionBank> => {
+  console.log(`READY FOR REQUEST -  ${base}/question-banks/manifest.json`); 
   try {
     // Try to load from public/question-banks/ directory
-    const response = await fetch(`/question-banks/${bankId}.json`);
+        const response = await fetch(`${base}question-banks/${bankId}.json`);
     
     if (!response.ok) {
       throw new Error(`Failed to load question bank: ${response.statusText}`);
@@ -93,8 +96,9 @@ export const loadQuestionBank = async (): Promise<{
  * This requires a manifest file at /public/question-banks/manifest.json
  */
 export const getAvailableQuestionBanks = async (): Promise<QuestionBank[]> => {
+
   try {
-    const response = await fetch('/question-banks/manifest.json');
+    const response = await fetch(`${base}/question-banks/manifest.json`);
     
     if (!response.ok) {
       throw new Error('Manifest not found');
