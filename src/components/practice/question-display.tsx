@@ -421,8 +421,8 @@ export const QuestionDisplay = ({
                       <span>Recording paused during video playback</span>
                     </div>
                   )}
-                  <p className="text-xs text-muted-foreground text-center">
-                    ▶️ Video is always playable - click play anytime (recording will pause automatically)
+                  <p className="text-sm text-muted-foreground text-center">
+                    ▶️ Click play to continue
                   </p>
                 </div>)
               ) : (
