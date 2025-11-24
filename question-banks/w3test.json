@@ -1,0 +1,30 @@
+{
+  "id": "wk3",
+  "name": "Hobbies",
+  "description": "Part 3 questions about hobbies",
+  "author": "IELTS Practice Team",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "part3",
+      "text": "What are some of the ways that hobbies are good for a decent social life?",
+      "media": "/ielts-speaking/videos/w3/1.mp4",
+      "speakingDuration": 40
+    },
+        {
+      "id": "q2",
+      "type": "part3",
+      "text": "If a person is too addicted to their hobby, can there be negative effects??",
+      "media": "/ielts-speaking/videos/w3/2.mp4",
+      "speakingDuration": 40
+    },
+        {
+      "id": "q3",
+      "type": "part3",
+      "text": "So how about balancing your free time and work. How is the work-life balance in your country?",
+      "media": "/ielts-speaking/videos/w3/3.mp4",
+      "speakingDuration": 40
+    }
+  ]
+}
