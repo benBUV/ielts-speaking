@@ -265,7 +265,7 @@ export const QuestionDisplay = ({
 
           {/* Part 2 Cue Card - Show when recording for Part 2 questions */}
           {showCard && (
-            <div className="mt-6 p-6 bg-gradient-to-br from-primary/5 to-primary/10 border-2 border-primary rounded-lg shadow-lg">
+            <div className="mt-6 p-6 bg-gradient-to-br from-primary/5 to-primary/10 border-2 border-primary rounded-lg">
               <h3 className="text-xl font-bold text-primary mb-4">
                 {question.card.title}
               </h3>
@@ -298,7 +298,7 @@ export const QuestionDisplay = ({
                 (<div className="flex flex-col items-center justify-center gap-3 mt-[30px] mb-[0px] pointer-events-auto px-5 sm:px-0">
                   {/* Progressive Enhancement: Show iframe first, upgrade to Player API when ready */}
                   <div 
-                    className="w-full sm:min-w-[500px] sm:w-3/5 md:w-2/3 lg:w-3/5 sm:max-w-4xl mx-auto aspect-video rounded-lg overflow-hidden shadow-lg relative pointer-events-auto transition-all duration-300"
+                    className="w-full sm:min-w-[500px] sm:w-3/5 md:w-2/3 lg:w-3/5 sm:max-w-4xl mx-auto aspect-video rounded-lg overflow-hidden relative pointer-events-auto transition-all duration-300"
                     role="region"
                     aria-label="Question video player"
                     aria-describedby={`question-text-${question.id}`}
@@ -325,7 +325,7 @@ export const QuestionDisplay = ({
                   </div>
                   <p className="text-xs text-muted-foreground text-center">
                     {isPlayerReady 
-                      ? "▶️ Click play on the video - recording will start automatically when it ends"
+                      ? "▶️ Click play: Recording will start after the video ends"
                       : isAPIReady
                       ? "Upgrading to auto-start mode..."
                       : "▶️ Click play on the video, then click 'Start Recording' below"}
@@ -336,7 +336,7 @@ export const QuestionDisplay = ({
                 // CRITICAL: pointer-events-auto ensures video is always clickable during recording
                 (<div className="flex flex-col items-center justify-center gap-3 mt-[30px] mb-[0px] pointer-events-auto px-5 sm:px-0">
                   <div 
-                    className="w-full sm:min-w-[500px] sm:w-3/5 md:w-2/3 lg:w-3/5 sm:max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg bg-black pointer-events-auto transition-all duration-300"
+                    className="w-full sm:min-w-[500px] sm:w-3/5 md:w-2/3 lg:w-3/5 sm:max-w-4xl mx-auto rounded-lg overflow-hidden bg-black pointer-events-auto transition-all duration-300"
                     role="region"
                     aria-label="Question video player"
                     aria-describedby={`question-text-${question.id}`}
@@ -422,7 +422,7 @@ export const QuestionDisplay = ({
                     </div>
                   )}
                   <p className="text-xs text-muted-foreground text-center">
-                    ▶️ Video is always playable - click play anytime (recording will pause automatically)
+                    &nbsp;
                   </p>
                 </div>)
               ) : (

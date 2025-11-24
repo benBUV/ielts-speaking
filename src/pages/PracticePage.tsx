@@ -665,7 +665,7 @@ export default function PracticePage() {
       {/* Fluid external container with responsive padding */}
       <div className="p-2 sm:p-4 md:p-6">
         <div className="w-full max-w-7xl mx-auto">
-          <Card className="border-0 shadow-lg">
+          <Card className="border-0">
             <CardContent className="p-0">
               {/* Three-Zone Layout with responsive spacing - Mobile-first approach */}
               <div className="flex flex-col gap-1 sm:gap-4 md:gap-6 px-0 sm:px-4 md:px-6 pb-4 sm:pb-6">
@@ -819,7 +819,7 @@ export default function PracticePage() {
                     <div>
                       {isSpeechRecognitionSupported ? (
                         <div 
-                          className="p-6 rounded-lg min-h-[8rem] max-h-[16rem] overflow-y-auto bg-[#F5F7FA] border border-border/50 shadow-sm mt-[30px]"
+                          className="p-6 rounded-lg min-h-[8rem] max-h-[16rem] overflow-y-auto bg-[#F5F7FA] border border-border/50 mt-[30px]"
                           role="region"
                           aria-label="Live transcript"
                           aria-live="polite"
