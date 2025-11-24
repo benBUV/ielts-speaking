@@ -1,0 +1,51 @@
+{
+  "id": "wk1test",
+  "name": "Computers",
+  "description": "Part 1 questions about the internet",
+  "author": "IELTS Practice Team",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "part1",
+      "text": "How often do you go online?",
+      "media": "/ielts-speaking/videos/w1/test/test1.mp4",
+      "speakingDuration": 15
+    },
+        {
+      "id": "q2",
+      "type": "part1",
+      "text": "What do you use the internet for?",
+      "media": "/ielts-speaking/videos/w1/test2.mp4",
+      "speakingDuration": 15
+    },
+        {
+      "id": "q3",
+      "type": "part1",
+      "text": "How do you get online?",
+      "media": "/ielts-speaking/videos/w1/test3.mp4",
+      "speakingDuration": 15
+    },
+        {
+      "id": "q4",
+      "type": "part1",
+      "text": "Do you have your own computer?",
+      "media": "/ielts-speaking/videos/w1/test4.mp4",
+      "speakingDuration": 15
+    },
+            {
+      "id": "q5",
+      "type": "part1",
+      "text": "What's your favourite website?",
+      "media": "/ielts-speaking/videos/w1/test5.mp4",
+      "speakingDuration": 15
+    },
+            {
+      "id": "q6",
+      "type": "part1",
+      "text": "Do you think children should be allowed unsupervised access to the internet?",
+      "media": "/ielts-speaking/videos/w1/test6.mp4",
+      "speakingDuration": 15
+    }
+  ]
+}

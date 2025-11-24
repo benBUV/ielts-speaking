@@ -1,0 +1,26 @@
+{
+  "id": "w2",
+  "name": "Gift",
+  "description": "Describe a gift",
+  "author": "IELTS Practice Team",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "part2",
+      "text": "Describe a gift that you gave someone.",
+      "media": "/ielts-speaking/videos/w2/prep/w2prep1.mp4",
+      "speakingDuration": 120,
+      "card": {
+        "title": "Describe a gift that you gave someone.",
+        "subtitle": "You should say:",
+        "bullets": [
+          "What the gift was",
+          "Who you gave it to",
+          "Why you gave it",
+          "Explain why it was so special"
+        ]
+      }
+    }
+  ]
+}

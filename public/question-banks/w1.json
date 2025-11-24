@@ -1,0 +1,37 @@
+{
+  "id": "wk1",
+  "name": "Computers",
+  "description": "Part 1 questions about computers",
+  "author": "IELTS Practice Team",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "part1",
+      "text": "Do you often use a computer?",
+      "media": "/ielts-speaking/videos/w1/1.mp4",
+      "speakingDuration": 15
+    },
+        {
+      "id": "q2",
+      "type": "part1",
+      "text": "Do lots students in your country use a computer?",
+      "media": "/ielts-speaking/videos/w1/2.mp4",
+      "speakingDuration": 15
+    },
+        {
+      "id": "q3",
+      "type": "part1",
+      "text": "What do you use a computer for?",
+      "media": "/ielts-speaking/videos/w1/3.mp4",
+      "speakingDuration": 15
+    },
+        {
+      "id": "q4",
+      "type": "part1",
+      "text": "Do you use a computer for anything else?",
+      "media": "/ielts-speaking/videos/w1/4.mp4",
+      "speakingDuration": 15
+    }
+  ]
+}
