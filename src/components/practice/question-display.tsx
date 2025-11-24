@@ -325,7 +325,7 @@ export const QuestionDisplay = ({
                   </div>
                   <p className="text-xs text-muted-foreground text-center">
                     {isPlayerReady 
-                      ? "▶️ Click play: Recording will start after the video ends"
+                      ? "▶️ Click play on the video - recording will start automatically when it ends"
                       : isAPIReady
                       ? "Upgrading to auto-start mode..."
                       : "▶️ Click play on the video, then click 'Start Recording' below"}
@@ -422,7 +422,7 @@ export const QuestionDisplay = ({
                     </div>
                   )}
                   <p className="text-xs text-muted-foreground text-center">
-                    &nbsp;
+                    ▶️ Video is always playable - click play anytime (recording will pause automatically)
                   </p>
                 </div>)
               ) : (
