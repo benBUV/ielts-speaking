@@ -222,10 +222,10 @@ export const QuestionDisplay = ({
           )}
 
           {/* Accessible text fallback - Always in DOM for screen readers */}
-          {/* Visually hidden when media is playing, visible when media fails or unavailable */}
+          {/* Visually hidden when media is present, visible when media is unavailable */}
           <div 
             id={`question-text-${question.id}`}
-            className={mediaError || !question.media ? "prose prose-lg max-w-none" : "sr-only"}
+            className={!question.media ? "prose prose-lg max-w-none" : "sr-only"}
             role="region"
             aria-label="Question text content"
             aria-live="polite"
@@ -235,26 +235,32 @@ export const QuestionDisplay = ({
             </p>
           </div>
 
-          {/* Visual indicator when video is unavailable */}
+          {/* Consolidated error message with question text and countdown */}
           {mediaError && (
             <div className="space-y-3">
-              {/* Error message */}
+              {/* Consolidated error message with question text */}
               <div 
-                className="flex items-center justify-center gap-3 px-6 py-4 bg-orange-50 dark:bg-orange-950 border-2 border-orange-300 dark:border-orange-700 rounded-lg"
+                className="flex flex-col items-center justify-center gap-4 px-6 py-5 bg-orange-50 dark:bg-orange-950 border-2 border-orange-300 dark:border-orange-700 rounded-lg"
                 role="alert"
                 aria-live="assertive"
               >
+                {/* Error header */}
                 <div className="flex items-center gap-2 text-orange-700 dark:text-orange-300">
                   <span className="text-2xl">⚠️</span>
-                  <div className="flex flex-col">
-                    <span className="font-semibold text-base">Video unavailable - you may begin speaking</span>
-                    <span className="text-sm opacity-90">{mediaError}</span>
-                  </div>
+                  <span className="font-semibold text-base">Whoops - video unavailable</span>
+                </div>
+                
+                {/* Question text */}
+                <div className="w-full text-center">
+                  <p className="text-sm font-medium text-muted-foreground mb-1">Text question:</p>
+                  <p className="text-lg font-medium text-foreground leading-relaxed whitespace-pre-wrap">
+                    {question.text}
+                  </p>
                 </div>
               </div>
 
-              {/* Auto-start countdown indicator */}
-              {autoStartCountdown !== null && autoStartCountdown > 0 && (
+              {/* Auto-start countdown indicator - disappears when recording starts */}
+              {!isRecording && autoStartCountdown !== null && autoStartCountdown > 0 && (
                 <div 
                   className="flex items-center justify-center gap-3 px-6 py-4 bg-primary/10 border-2 border-primary/30 rounded-lg animate-pulse"
                   role="status"
