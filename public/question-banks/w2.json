@@ -21,6 +21,23 @@
           "explain why you think he or she is so kind"
         ]
       }
+    },
+    {
+      "id": "q2",
+      "type": "part2",
+      "text": "Describe a member of your family you get on well with.",
+      "media": "/ielts-speaking/videos/w2/w2.2.mp4",
+      "speakingDuration": 120,
+      "card": {
+        "title": "Describe a member of your family you get on well with.",
+        "subtitle": "You should say:",
+        "bullets": [
+          "who it is and what relationship you have with this person",
+          "what they are like",
+          "what you do together",
+          "explain why you get on so well"
+        ]
+      }
     }
   ]
 }
