@@ -15,6 +15,8 @@ interface QuestionDisplayProps {
   isPaused?: boolean;
   onPauseRecording?: () => void;
   onResumeRecording?: () => void;
+  currentQuestionIndex?: number;
+  totalQuestions?: number;
 }
 
 export const QuestionDisplay = ({ 
@@ -24,6 +26,8 @@ export const QuestionDisplay = ({
   isPaused = false,
   onPauseRecording,
   onResumeRecording,
+  currentQuestionIndex,
+  totalQuestions,
 }: QuestionDisplayProps) => {
   const { toast } = useToast();
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
@@ -208,6 +212,15 @@ export const QuestionDisplay = ({
       <CardContent className="px-0 sm:px-4 md:px-6 pb-0 sm:pb-4 md:pb-6">
         <div className="space-y-5">
 
+          {/* Question Counter - Above video, left-aligned, 5px spacing */}
+          {currentQuestionIndex !== undefined && totalQuestions !== undefined && (
+            <div className="px-5 sm:px-0">
+              <p className="w-full sm:min-w-[600px] sm:w-[70%] sm:max-w-4xl mx-auto text-left text-foreground mb-[5px]">
+                Question {currentQuestionIndex + 1} of {totalQuestions}
+              </p>
+            </div>
+          )}
+
           {/* Accessible text fallback - Always in DOM for screen readers */}
           {/* Visually hidden when media is playing, visible when media fails or unavailable */}
           <div 
@@ -295,10 +308,11 @@ export const QuestionDisplay = ({
               {isYouTubeVideo && youtubeEmbedUrl ? (
                 // YouTube Video Player (Progressive Enhancement)
                 // CRITICAL: pointer-events-auto ensures YouTube player is always clickable during recording
-                (<div className="flex flex-col items-center justify-center gap-3 mt-[30px] mb-[0px] pointer-events-auto px-5 sm:px-0">
+                (<div className="flex flex-col items-center justify-center gap-1.5 mt-[30px] mb-[0px] pointer-events-auto px-5 sm:px-0">
                   {/* Progressive Enhancement: Show iframe first, upgrade to Player API when ready */}
                   <div 
-                    className="w-full sm:min-w-[500px] sm:w-3/5 md:w-2/3 lg:w-3/5 sm:max-w-4xl mx-auto aspect-video rounded-lg overflow-hidden relative pointer-events-auto transition-all duration-300"
+                    key={`youtube-container-${question.id}`}
+                    className="w-full sm:min-w-[600px] sm:w-[70%] sm:max-w-4xl mx-auto aspect-video rounded-lg overflow-hidden relative pointer-events-auto transition-all duration-300"
                     role="region"
                     aria-label="Question video player"
                     aria-describedby={`question-text-${question.id}`}
@@ -313,6 +327,7 @@ export const QuestionDisplay = ({
                     {/* Show iframe overlay until Player API is ready */}
                     {!isPlayerReady && (
                       <iframe
+                        key={youtubeEmbedUrl}
                         src={youtubeEmbedUrl}
                         title={`Question Video: ${question.text}`}
                         className="w-full h-full absolute inset-0 z-10 pointer-events-auto"
@@ -323,25 +338,22 @@ export const QuestionDisplay = ({
                       />
                     )}
                   </div>
-                  <p className="text-xs text-muted-foreground text-center">
-                    {isPlayerReady 
-                      ? "▶️ Click play on the video - recording will start automatically when it ends"
-                      : isAPIReady
-                      ? "Upgrading to auto-start mode..."
-                      : "▶️ Click play on the video, then click 'Start Recording' below"}
+                  <p className={`text-sm text-muted-foreground text-center transition-opacity duration-300 mt-[5px] mb-[-20px] ${isPlayingAudio ? 'opacity-0' : 'opacity-100'}`}>
+                    Press play to begin
                   </p>
                 </div>)
               ) : isVideoFileMedia ? (
                 // HTML5 Video Player (for .mp4, .webm files)
                 // CRITICAL: pointer-events-auto ensures video is always clickable during recording
-                (<div className="flex flex-col items-center justify-center gap-3 mt-[30px] mb-[0px] pointer-events-auto px-5 sm:px-0">
+                (<div className="flex flex-col items-center justify-center gap-1.5 mt-[30px] mb-[0px] pointer-events-auto px-5 sm:px-0">
                   <div 
-                    className="w-full sm:min-w-[500px] sm:w-3/5 md:w-2/3 lg:w-3/5 sm:max-w-4xl mx-auto rounded-lg overflow-hidden bg-black pointer-events-auto transition-all duration-300"
+                    className="w-full sm:min-w-[600px] sm:w-[70%] sm:max-w-4xl mx-auto rounded-lg overflow-hidden bg-black pointer-events-auto transition-all duration-300"
                     role="region"
                     aria-label="Question video player"
                     aria-describedby={`question-text-${question.id}`}
                   >
                     <video
+                      key={question.media}
                       ref={videoRef}
                       controls
                       controlsList="nodownload"
@@ -421,8 +433,8 @@ export const QuestionDisplay = ({
                       <span>Recording paused during video playback</span>
                     </div>
                   )}
-                  <p className="text-sm text-muted-foreground text-center">
-                    ▶️ Click play to continue
+                  <p className={`text-sm text-muted-foreground text-center transition-opacity duration-300 mt-[5px] mb-[-20px] ${isPlayingAudio ? 'opacity-0' : 'opacity-100'}`}>
+                    Press play to begin
                   </p>
                 </div>)
               ) : (
@@ -433,8 +445,9 @@ export const QuestionDisplay = ({
                   </div>
                   {/* HTML5 Audio Player */}
                   <audio 
+                    key={question.media}
                     controls 
-                    className="w-full sm:min-w-[500px] sm:w-3/5 md:w-2/3 lg:w-3/5 sm:max-w-4xl mx-auto transition-all duration-300"
+                    className="w-full sm:min-w-[600px] sm:w-[70%] sm:max-w-4xl mx-auto transition-all duration-300"
                     aria-label={`Audio question: ${question.text}`}
                     aria-describedby={`question-text-${question.id}`}
                     onEnded={() => {

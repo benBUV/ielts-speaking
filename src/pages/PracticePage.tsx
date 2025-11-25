@@ -677,11 +677,6 @@ export default function PracticePage() {
                 >
                   {(phase === AppPhase.Preparation || phase === AppPhase.Recording) && (
                     <div className={`transition-opacity duration-300 ${isTransitioning ? 'opacity-50' : 'opacity-100'}`}>
-                      {/* Question Number Indicator */}
-                      <p className="text-center text-foreground mb-2 sm:mb-4 px-6 sm:px-0">
-                        Question {currentQuestionIndex + 1} of {sampleQuestions.length}
-                      </p>
-                      
                       <QuestionDisplay 
                         question={currentQuestion} 
                         onAudioEnded={handleAudioEnded}
@@ -689,6 +684,8 @@ export default function PracticePage() {
                         isPaused={isPaused}
                         onPauseRecording={pauseRecording}
                         onResumeRecording={resumeRecording}
+                        currentQuestionIndex={currentQuestionIndex}
+                        totalQuestions={sampleQuestions.length}
                       />
                     </div>
                   )}
