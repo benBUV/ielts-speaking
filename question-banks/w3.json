@@ -6,56 +6,24 @@
   "version": "1.0",
   "questions": [
     {
-      "id": "q1",
-      "type": "part3",
-      "text": "What are some of the ways that hobbies are good for a decent social life?",
-      "media": "/ielts-speaking/videos/w3/test/test1.mp4",
-      "speakingDuration": 40,
-      "card": {
-        "title": "Describe an exercise you know.",
-        "subtitle": "You should say:",
-        "bullets": [
-          "What it is",
-          "How it is done",
-          "When you first tried it",
-          "What kind of people it is suitable for",
-          "Explain why you think it is a good exercise"
-        ]
-      }
-    },
-        {
       "id": "q2",
       "type": "part3",
-      "text": "How can people improve their health?",
-      "media": "/ielts-speaking/videos/w3/test/test2.mp4",
+      "text": "What are some of the ways that having a hobby is good for a decent social life?",
+      "media": "/ielts-speaking/videos/w3/w3.1.mp4",
       "speakingDuration": 40
     },
     {
       "id": "q3",
       "type": "part3",
-      "text": "Do elderly people do much exercise in your country?",
-      "media": "/ielts-speaking/videos/w3/test/test3.mp4",
+      "text": "If a person is too addicted to their hobbies, can there be negative effects?",
+      "media": "/ielts-speaking/videos/w3/w3.2.mp4",
       "speakingDuration": 40
     },
      {
       "id": "q4",
       "type": "part3",
-      "text": "Do you think illness can be prevented?",
-      "media": "/ielts-speaking/videos/w3/test/test3.mp4",
-      "speakingDuration": 40
-    },
-     {
-      "id": "q5",
-      "type": "part3",
-      "text": "Do you think there will be less illness in the future?",
-      "media": "/ielts-speaking/videos/w3/test/test5.mp4",
-      "speakingDuration": 40
-    },
-     {
-      "id": "q6",
-      "type": "part3",
-      "text": "Do you think health care should be free?",
-      "media": "/ielts-speaking/videos/w3/test/test6.mp4",
+      "text": "How is the work-life balance in your country?",
+      "media": "/ielts-speaking/videos/w3.3.mp4",
       "speakingDuration": 40
     }
   ]

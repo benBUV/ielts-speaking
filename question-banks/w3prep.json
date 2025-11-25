@@ -1,0 +1,26 @@
+{
+  "id": "wk3",
+  "name": "Hobbies",
+  "description": "Part 2 question about hobbies",
+  "author": "IELTS Practice Team",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "part2",
+      "text": "Describe a place you find peaceful.",
+      "media": "/ielts-speaking/videos/w3/w3prepnew.mp4",
+      "speakingDuration": 120,
+      "card": {
+        "title": "Describe a place you find peaceful.",
+        "subtitle": "You should say:",
+        "bullets": [
+          "Where it is",
+          "When you first went there",
+          "What you do there",
+          "Why you like it"
+        ]
+      }
+    }
+  ]
+}
