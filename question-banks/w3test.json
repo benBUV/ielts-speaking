@@ -1,29 +1,61 @@
 {
   "id": "wk3",
-  "name": "Hobbies",
-  "description": "Part 3 questions about hobbies",
+  "name": "Health",
+  "description": "Part 3 questions about health",
   "author": "IELTS Practice Team",
   "version": "1.0",
   "questions": [
     {
       "id": "q1",
-      "type": "part3",
-      "text": "What are some of the ways that hobbies are good for a decent social life?",
-      "media": "/ielts-speaking/videos/w3/1.mp4",
-      "speakingDuration": 40
+      "type": "part2",
+      "text": "Describe an exercise you know.",
+      "media": "/ielts-speaking/videos/w3/W3test1.mp4",
+      "speakingDuration": 120,
+      "card": {
+        "title": "Describe an exercise you know.",
+        "subtitle": "You should say:",
+        "bullets": [
+          "what it is",
+          "how it is done",
+          "when you first tried it",
+          "what kind of people it is good for",
+          "and explain why you think it is good"
+        ]
+      }
     },
         {
       "id": "q2",
       "type": "part3",
-      "text": "If a person is too addicted to their hobby, can there be negative effects??",
-      "media": "/ielts-speaking/videos/w3/2.mp4",
+      "text": "How can people improve their health?",
+      "media": "/ielts-speaking/videos/w3/W3test2.mp4",
       "speakingDuration": 40
     },
-        {
+    {
       "id": "q3",
       "type": "part3",
-      "text": "So how about balancing your free time and work. How is the work-life balance in your country?",
-      "media": "/ielts-speaking/videos/w3/3.mp4",
+      "text": "Do elderly people do much exercise in your country?",
+      "media": "/ielts-speaking/videos/w3/W3test3.mp4",
+      "speakingDuration": 40
+    },
+     {
+      "id": "q4",
+      "type": "part3",
+      "text": "Do you think all illness can be prevented?",
+      "media": "/ielts-speaking/videos/w3/W3test4.mp4",
+      "speakingDuration": 40
+    },
+     {
+      "id": "q5",
+      "type": "part3",
+      "text": "Do you think there will be more or less illness in the future?",
+      "media": "/ielts-speaking/videos/w3/W3test5.mp4",
+      "speakingDuration": 40
+    },
+     {
+      "id": "q6",
+      "type": "part3",
+      "text": "Do you think health care should be free?",
+      "media": "/ielts-speaking/videos/w3/W3test6.mp4",
       "speakingDuration": 40
     }
   ]
