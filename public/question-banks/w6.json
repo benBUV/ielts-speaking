@@ -1,0 +1,26 @@
+{
+  "id": "w2test",
+  "name": "Describe a person",
+  "description": "talk about a person you know",
+  "author": "IELTS Practice Team",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "part2",
+      "text": "Describe a time when you were embarrassed.",
+      "media": "/ielts-speaking/videos/w6/w61.mp4",
+      "speakingDuration": 120,
+      "card": {
+        "title": "Describe a time when you were embarrassed.",
+        "subtitle": "You should say:",
+        "bullets": [
+          "when it was",
+          "who you were with",
+          "what happened",
+          "and how you coped afterwards"
+        ]
+      }
+    }
+  ]
+}
