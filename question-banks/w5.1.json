@@ -1,0 +1,51 @@
+{
+  "id": "wk5",
+  "name": "Computers",
+  "description": "Part 1 questions about clothes",
+  "author": "IELTS Practice Team",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "part1",
+      "text": "Are clothes important to you?",
+      "media": "/ielts-speaking/videos/w5/W51.mp4",
+      "speakingDuration": 15
+    },
+        {
+      "id": "q2",
+      "type": "part1",
+      "text": "What kind of clothes do you usually wear?",
+      "media": "/ielts-speaking/videos/w5/W52.mp4",
+      "speakingDuration": 15
+    },
+        {
+      "id": "q3",
+      "type": "part1",
+      "text": "Do you ever wear the traditional clothes of your country?",
+      "media": "/ielts-speaking/videos/w5/W53.mp4",
+      "speakingDuration": 15
+    },
+        {
+      "id": "q4",
+      "type": "part1",
+      "text": "Where do you usually buy your clothes?",
+      "media": "/ielts-speaking/videos/w5/W54.mp4",
+      "speakingDuration": 15
+    },
+        {
+      "id": "q5",
+      "type": "part1",
+      "text": "Have you ever worn a uniform?",
+      "media": "/ielts-speaking/videos/w5/W55.mp4",
+      "speakingDuration": 15
+    },
+    {
+      "id": "q6",
+      "type": "part1",
+      "text": "Do most people in your country follow fashion?",
+      "media": "/ielts-speaking/videos/w5/W56.mp4",
+      "speakingDuration": 15
+    }
+  ]
+}
