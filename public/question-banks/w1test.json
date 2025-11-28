@@ -22,26 +22,19 @@
         {
       "id": "q3",
       "type": "part1",
-      "text": "How do you get online?",
-      "media": "/ielts-speaking/videos/w1/Test3.mp4",
-      "speakingDuration": 15
-    },
-        {
-      "id": "q4",
-      "type": "part1",
       "text": "Do you have your own computer?",
       "media": "/ielts-speaking/videos/w1/Test4.mp4",
       "speakingDuration": 15
     },
             {
-      "id": "q5",
+      "id": "q4",
       "type": "part1",
       "text": "What's your favourite website?",
       "media": "/ielts-speaking/videos/w1/Test5.mp4",
       "speakingDuration": 15
     },
             {
-      "id": "q6",
+      "id": "q5",
       "type": "part1",
       "text": "Do you think children should be allowed unsupervised access to the internet?",
       "media": "/ielts-speaking/videos/w1/Test6.mp4",
