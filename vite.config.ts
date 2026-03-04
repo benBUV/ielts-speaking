@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
 import path from 'path';
-import { miaodaDevPlugin } from "miaoda-sc-plugin";
+//import { miaodaDevPlugin } from "miaoda-sc-plugin";
 
 export default defineConfig({
   base: '/ielts-speaking/',
@@ -15,7 +15,7 @@ export default defineConfig({
         namedExport: 'ReactComponent',
       },
     }),
-    miaodaDevPlugin(),
+   // miaodaDevPlugin(),
   ],
   resolve: {
     alias: {
